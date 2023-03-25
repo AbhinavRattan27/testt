@@ -1,0 +1,208 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap');
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css");
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-image:url(pngtree-memphis-playful-abstract-portfolio-pink-picture-image_1347362.jpg);
+    background-repeat: no-repeat;
+    background-size: 1500px;
+}
+
+.navbar{
+    display: flex;
+    list-style: none;
+    margin: 60px 0px 0px 220px;
+    gap: 2.4em;
+}
+
+li{
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1.5em;
+    cursor: pointer;
+    transition: 0.3s ease-in all;
+    user-select: none;
+}
+
+.nav-btn{
+    margin: 0px 0px 0px 200px;
+    padding: 15px 35px 15px 35px;
+    position: relative;
+    bottom:1em;
+    border: none;
+    border-radius: 6px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 0.8em;
+    transition: 0.8s all ease;
+    cursor: pointer;
+    border: 1.2px solid grey;
+    background-color: white;
+}
+
+.nav-btn:hover{
+    transform: translateY(-6%);
+    background-color:beige;
+    box-shadow: grey 1px 5px 20px;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+    transition: 0.3s ease-in all;
+    cursor: pointer;
+}
+
+li:nth-of-type(1){
+    margin-right: 200px;
+    font-size: 2.2em;
+    position: relative;
+    bottom:.15em;
+    right:1.5em;
+}
+
+img{
+    position: absolute;
+    right: 10em;
+    bottom:10em;
+    border: 1px black solid;
+    border-radius: 100%;
+}
+
+h1{
+    font-size: 4em;
+    margin: 210px 0px 0px 180px;
+    font-family: 'Ubuntu', sans-serif;
+    line-height: 80px;
+    user-select: none;
+    animation: float 3s ease-in 1s infinite normal;
+}
+
+.icons{
+    display: flex;
+    margin: 18em 0px 0px 12em;
+    gap:2em;
+}
+
+.icons i{
+    color: black;
+    cursor: pointer;
+    transition: 1s ease-in all;
+}
+
+@keyframes float{
+    50%{
+      transform: translateY(-2%);
+    }
+    100%{
+        transform: translateY(0%);
+      }
+}
+
+.new-cls:after{
+    content: "";
+    position: absolute;
+    background-color: black;
+    height: 3px;
+    width: 0%;
+    opacity: 0;
+    top:90px;
+    left: 530px;
+    transition: 0.6s all ease-in;
+}
+
+.new-cls:hover::after{
+    opacity: 1;
+    width: 5%;
+}
+
+.new-cls-1:after{
+    content: "";
+    position: absolute;
+    background-color: black;
+    height: 3px;
+    width: 0%;
+    opacity: 0;
+    top:90px;
+    left: 640px;
+    transition: 0.6s all ease-in;
+}
+
+.new-cls-1:hover::after{
+    opacity: 1;
+    width: 7%;
+}
+
+.new-cls-2:after{
+    content: "";
+    position: absolute;
+    background-color: black;
+    height: 3px;
+    width: 0%;
+    opacity: 0;
+    top:90px;
+    left: 785px;
+    transition: 0.6s all ease-in;
+}
+
+.new-cls-2:hover::after{
+    opacity: 1;
+    width: 7%;
+}
+
+.circle{
+    display: none;
+}
+
+@media screen and (max-width:500px){
+
+    li:nth-of-type(5),li:nth-of-type(1){
+        display: none;
+    }
+    .navbar{
+        display: flex;
+        list-style: none;
+        margin: 60px 0px 0px 35px;
+        gap: 2.4em;
+    }
+    h1{
+        font-size:2em;
+        margin: 110px 0px 0px 250px;
+        animation-play-state: paused;
+    }
+    img{
+        width: 48%;
+        height: 30%;
+        right: 12em;
+        bottom:16em;
+        border-radius: 100%;
+    }
+
+    .icons{
+        display: flex;
+        margin: 2em 0px 0px 10em;
+        gap:2em;
+    }
+
+    .new-cls:after,.new-cls-1:after,.new-cls-2:after{
+        display: none;
+    }
+
+    .circle{
+        display: block;
+        position: absolute;
+        bottom: -470px;
+        width: 600px;
+        height: 600px;
+        border-radius: 50%;
+        background-color:skyblue;
+        right: -80px;
+    }
+    body{
+        overflow: hidden;
+    }
+}
